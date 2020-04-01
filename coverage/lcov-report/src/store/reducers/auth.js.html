@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/store/reducers/auth.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">All files</a> / <a href="index.html">src/store/reducers</a> auth.js
+    </h1>
+    <div class='clearfix'>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import * as actionTypes from '../actions/actionTypes';
+import { updateObject } from '../../shared/utility';
+&nbsp;
+const initialState = {
+    token: null,
+    userId: null,
+    error: null,
+    loading: false,
+    authRedirectPath: '/'
+};
+&nbsp;
+const authStart = <span class="fstat-no" title="function not covered" >( </span>state, action ) =&gt; {
+<span class="cstat-no" title="statement not covered" >    return updateObject( state, { error: null, loading: true } );</span>
+};
+&nbsp;
+const authSuccess = (state, action) =&gt; {
+    return updateObject( state, { 
+        token: action.idToken,
+        userId: action.userId,
+        error: null,
+        loading: false
+     } );
+};
+&nbsp;
+const authFail = <span class="fstat-no" title="function not covered" >(s</span>tate, action) =&gt; {
+<span class="cstat-no" title="statement not covered" >    return updateObject( state, {</span>
+        error: action.error,
+        loading: false
+    });
+};
+&nbsp;
+const authLogout = <span class="fstat-no" title="function not covered" >(s</span>tate, action) =&gt; {
+<span class="cstat-no" title="statement not covered" >    return updateObject(state, { token: null, userId: null });</span>
+};
+&nbsp;
+const setAuthRedirectPath = <span class="fstat-no" title="function not covered" >(s</span>tate, action) =&gt; {
+<span class="cstat-no" title="statement not covered" >    return updateObject(state, { authRedirectPath: action.path })</span>
+}
+&nbsp;
+const reducer = ( state = initialState, action ) =&gt; {
+    switch ( action.type ) {
+<span class="branch-0 cbranch-no" title="branch not covered" >        case actionTypes.AUTH_START: <span class="cstat-no" title="statement not covered" >return authStart(state, action);</span></span>
+        case actionTypes.AUTH_SUCCESS: return authSuccess(state, action);
+<span class="branch-2 cbranch-no" title="branch not covered" >        case actionTypes.AUTH_FAIL: <span class="cstat-no" title="statement not covered" >return authFail(state, action);</span></span>
+<span class="branch-3 cbranch-no" title="branch not covered" >        case actionTypes.AUTH_LOGOUT: <span class="cstat-no" title="statement not covered" >return authLogout(state, action);</span></span>
+<span class="branch-4 cbranch-no" title="branch not covered" >        case actionTypes.SET_AUTH_REDIRECT_PATH: <span class="cstat-no" title="statement not covered" >return setAuthRedirectPath(state,action);</span></span>
+        default:
+            return state;
+    }
+};
+&nbsp;
+export default reducer;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Apr 01 2020 21:50:05 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>
