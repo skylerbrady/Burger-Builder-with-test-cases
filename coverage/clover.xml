@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1585758005577" clover="3.2.0">
-  <project timestamp="1585758005577" name="All files">
-    <metrics statements="553" coveredstatements="83" conditionals="263" coveredconditionals="10" methods="206" coveredmethods="10" elements="1022" coveredelements="103" complexity="0" loc="553" ncloc="553" packages="32" files="41" classes="41">
+<coverage generated="1585924015525" clover="3.2.0">
+  <project timestamp="1585924015526" name="All files">
+    <metrics statements="553" coveredstatements="87" conditionals="263" coveredconditionals="12" methods="206" coveredmethods="14" elements="1022" coveredelements="113" complexity="0" loc="553" ncloc="553" packages="32" files="41" classes="41">
       <package name="src">
         <metrics statements="58" coveredstatements="1" conditionals="43" coveredconditionals="0" methods="28" coveredmethods="0"/>
         <file name="App.js" path="/home/akash/Documents/projects/React JS/testing--01-finished/src/App.js">
@@ -76,11 +76,11 @@
         </file>
       </package>
       <package name="src.components.Burger">
-        <metrics statements="8" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <metrics statements="8" coveredstatements="2" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="1"/>
         <file name="Burger.js" path="/home/akash/Documents/projects/React JS/testing--01-finished/src/components/Burger/Burger.js">
-          <metrics statements="8" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
-          <line num="6" count="1" type="stmt"/>
-          <line num="7" count="0" type="stmt"/>
+          <metrics statements="8" coveredstatements="2" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="1"/>
+          <line num="6" count="2" type="stmt"/>
+          <line num="7" count="2" type="stmt"/>
           <line num="9" count="0" type="stmt"/>
           <line num="10" count="0" type="stmt"/>
           <line num="14" count="0" type="stmt"/>
@@ -90,12 +90,12 @@
         </file>
       </package>
       <package name="src.components.Burger.BuildControls">
-        <metrics statements="6" coveredstatements="2" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <metrics statements="6" coveredstatements="3" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="1"/>
         <file name="BuildControls.js" path="/home/akash/Documents/projects/React JS/testing--01-finished/src/components/Burger/BuildControls/BuildControls.js">
-          <metrics statements="6" coveredstatements="2" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
-          <line num="6" count="1" type="stmt"/>
-          <line num="13" count="1" type="stmt"/>
-          <line num="14" count="0" type="stmt"/>
+          <metrics statements="6" coveredstatements="3" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="1"/>
+          <line num="6" count="2" type="stmt"/>
+          <line num="13" count="2" type="stmt"/>
+          <line num="14" count="1" type="stmt"/>
           <line num="19" count="0" type="stmt"/>
           <line num="22" count="0" type="stmt"/>
           <line num="23" count="0" type="stmt"/>
@@ -105,7 +105,7 @@
         <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <file name="BuildControl.js" path="/home/akash/Documents/projects/React JS/testing--01-finished/src/components/Burger/BuildControls/BuildControl/BuildControl.js">
           <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-          <line num="5" count="1" type="stmt"/>
+          <line num="5" count="2" type="stmt"/>
           <line num="6" count="0" type="stmt"/>
         </file>
       </package>
@@ -129,7 +129,7 @@
           <line num="33" count="0" type="stmt"/>
           <line num="35" count="0" type="stmt"/>
           <line num="38" count="0" type="stmt"/>
-          <line num="42" count="1" type="stmt"/>
+          <line num="42" count="2" type="stmt"/>
         </file>
       </package>
       <package name="src.components.Burger.OrderSummary">
@@ -245,7 +245,7 @@
         <metrics statements="2" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <file name="Backdrop.js" path="/home/akash/Documents/projects/React JS/testing--01-finished/src/components/UI/Backdrop/Backdrop.js">
           <metrics statements="2" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
-          <line num="5" count="1" type="stmt"/>
+          <line num="5" count="2" type="stmt"/>
           <line num="6" count="0" type="cond" truecount="0" falsecount="2"/>
         </file>
       </package>
@@ -282,19 +282,19 @@
         </file>
       </package>
       <package name="src.components.UI.Modal">
-        <metrics statements="2" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <metrics statements="2" coveredstatements="1" conditionals="6" coveredconditionals="2" methods="2" coveredmethods="1"/>
         <file name="Modal.js" path="/home/akash/Documents/projects/React JS/testing--01-finished/src/components/UI/Modal/Modal.js">
-          <metrics statements="2" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="2" coveredmethods="0"/>
+          <metrics statements="2" coveredstatements="1" conditionals="6" coveredconditionals="2" methods="2" coveredmethods="1"/>
           <line num="10" count="0" type="cond" truecount="0" falsecount="2"/>
-          <line num="14" count="0" type="stmt"/>
+          <line num="14" count="1" type="stmt"/>
         </file>
       </package>
       <package name="src.components.UI.Spinner">
-        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <file name="Spinner.js" path="/home/akash/Documents/projects/React JS/testing--01-finished/src/components/UI/Spinner/Spinner.js">
-          <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-          <line num="5" count="1" type="stmt"/>
-          <line num="6" count="0" type="stmt"/>
+          <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="5" count="2" type="stmt"/>
+          <line num="6" count="1" type="stmt"/>
         </file>
       </package>
       <package name="src.containers.Auth">
@@ -489,7 +489,7 @@
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <file name="Aux.js" path="/home/akash/Documents/projects/React JS/testing--01-finished/src/hoc/Aux/Aux.js">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-          <line num="1" count="1" type="stmt"/>
+          <line num="1" count="2" type="stmt"/>
         </file>
       </package>
       <package name="src.hoc.Layout">

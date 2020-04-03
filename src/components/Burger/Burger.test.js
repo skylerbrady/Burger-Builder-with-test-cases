@@ -12,7 +12,11 @@ describe("<Burger />", () => {
   beforeEach(() => {
     wrapper = shallow(<Burger />);
   });
-  it("should render initially sometext ", () => {
+  it("should render initially sometext", () => {
     expect(wrapper.find(Burger)).toHaveLength(0);
+  });
+  let output = 2;
+  it("should render initially two burger ingredients ", () => {
+    expect(wrapper.find("div").lenght).toEqual(output);
   });
 });
