@@ -59,7 +59,13 @@
 34
 35
 36
-37</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+37
+38
+39
+40
+41
+42
+43</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -73,8 +79,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -87,7 +91,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -95,49 +98,64 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React <span class="cstat-no" title="statement not covered" >from 'react';<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span></span></span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React <span class="cstat-no" title="statement not covered" >from "react";<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span></span></span>
 &nbsp;
-import classe<span class="cstat-no" title="statement not covered" >s from './Order.css';<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span>
+import classe<span class="cstat-no" title="statement not covered" >s from "./Order.css";<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span>
 &nbsp;
-const order = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >( </span>props ) =&gt; {</span>
-    const ingredients = <span class="cstat-no" title="statement not covered" >[];</span>
+const order = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(p</span>rops) =&gt; {</span>
+  const ingredients = <span class="cstat-no" title="statement not covered" >[];</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    for ( let ingredientName in props.ingredients ) {</span>
-<span class="cstat-no" title="statement not covered" >        ingredients.push(</span>
-            {
-                name: ingredientName,
-                amount: props.ingredients[ingredientName]
-            }
-        );
-    }
-&nbsp;
-    const ingredientOutput = <span class="cstat-no" title="statement not covered" >ingredients.map(<span class="fstat-no" title="function not covered" >ig</span> =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >        return &lt;span </span>
-            style={{
-                textTransform: 'capitalize',
-                display: 'inline-block',
-                margin: '0 8px',
-                border: '1px solid #ccc',
-                padding: '5px'
-                }}
-            key={ig.name}&gt;{ig.name} ({ig.amount})&lt;/span&gt;;
+<span class="cstat-no" title="statement not covered" >  for (let ingredientName in props.ingredients) {</span>
+<span class="cstat-no" title="statement not covered" >    ingredients.push({</span>
+      name: ingredientName,
+      amount: props.ingredients[ingredientName],
     });
+  }
 &nbsp;
+  const ingredientOutput = <span class="cstat-no" title="statement not covered" >ingredients.map(<span class="fstat-no" title="function not covered" >(i</span>g) =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >    return (</span>
-        &lt;div className={classes.Order}&gt;
-            &lt;p&gt;Ingredients: {ingredientOutput}&lt;/p&gt;
-            &lt;p&gt;Price: &lt;strong&gt;USD {Number.parseFloat( props.price ).toFixed( 2 )}&lt;/strong&gt;&lt;/p&gt;
-        &lt;/div&gt;
+      &lt;span
+        style={{
+          textTransform: "capitalize",
+          display: "inline-block",
+          margin: "0 8px",
+          border: "1px solid #ccc",
+          padding: "5px",
+        }}
+        key={ig.name}
+      &gt;
+        {ig.name} ({ig.amount})
+      &lt;/span&gt;
     );
+  });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  return (</span>
+    &lt;div className={classes.Order}&gt;
+      &lt;p&gt;Ingredients: {ingredientOutput}&lt;/p&gt;
+      &lt;p&gt;
+        Price: &lt;strong&gt; {Number.parseFloat(props.price)}&lt;/strong&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+  );
 };<span class="cstat-no" title="statement not covered" ></span>
 &nbsp;
-export default order;</pre></td></tr>
+export default order;
+&nbsp;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Apr 03 2020 19:56:55 GMT+0530 (IST)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Apr 06 2020 20:05:13 GMT+0530 (IST)
 </div>
 </div>
 <script src="../../../prettify.js"></script>
