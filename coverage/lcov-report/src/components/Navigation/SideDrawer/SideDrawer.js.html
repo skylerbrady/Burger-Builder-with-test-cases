@@ -21,7 +21,7 @@
     <div class='clearfix'>
     </div>
   </div>
-  <div class='status-line low'></div>
+  <div class='status-line high'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
@@ -51,21 +51,20 @@
 26
 27
 28
-29</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+29</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -77,22 +76,23 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React <span class="cstat-no" title="statement not covered" >from 'react';<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span></span></span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
 &nbsp;
-import Logo <span class="cstat-no" title="statement not covered" >from '../../Logo/Logo';<span class="cstat-no" title="statement not covered" ></span></span>
-import NavigationItems <span class="cstat-no" title="statement not covered" >from '../NavigationItems/NavigationItems';<span class="cstat-no" title="statement not covered" ></span></span>
-import classes fro<span class="cstat-no" title="statement not covered" >m './SideDrawer.css';<span class="cstat-no" title="statement not covered" ></span></span>
-import Backdrop <span class="cstat-no" title="statement not covered" >from '../../UI/Backdrop/Backdrop';<span class="cstat-no" title="statement not covered" ></span></span>
-import Aux <span class="cstat-no" title="statement not covered" >from '../../../hoc/Aux/Aux';<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span>
+import Logo from '../../Logo/Logo';
+import NavigationItems from '../NavigationItems/NavigationItems';
+import classes from './SideDrawer.css';
+import Backdrop from '../../UI/Backdrop/Backdrop';
+import Aux from '../../../hoc/Aux/Aux';
 &nbsp;
-const sideDrawer = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >( </span>props ) =&gt; {</span>
-    let attachedClasses = <span class="cstat-no" title="statement not covered" >[classes.SideDrawer, classes.Close];</span>
-<span class="cstat-no" title="statement not covered" >    if (props.open) {</span>
+const sideDrawer = ( props ) =&gt; {
+    let attachedClasses = [classes.SideDrawer, classes.Close];
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (props.open) {
 <span class="cstat-no" title="statement not covered" >        attachedClasses = [classes.SideDrawer, classes.Open];</span>
     }
-<span class="cstat-no" title="statement not covered" >    return (</span>
+    return (
         &lt;Aux&gt;
             &lt;Backdrop show={props.open} clicked={props.closed}/&gt;
             &lt;div className={attachedClasses.join(' ')} onClick={props.closed}&gt;
@@ -105,7 +105,7 @@ const sideDrawer = <span class="cstat-no" title="statement not covered" ><span c
             &lt;/div&gt;
         &lt;/Aux&gt;
     );
-};<span class="cstat-no" title="statement not covered" ></span>
+};
 &nbsp;
 export default sideDrawer;</pre></td></tr>
 </table></pre>
@@ -113,7 +113,7 @@ export default sideDrawer;</pre></td></tr>
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Apr 06 2020 20:05:13 GMT+0530 (IST)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Apr 07 2020 22:07:11 GMT+0530 (IST)
 </div>
 </div>
 <script src="../../../../prettify.js"></script>

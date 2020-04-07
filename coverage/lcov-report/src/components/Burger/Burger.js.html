@@ -21,7 +21,7 @@
     <div class='clearfix'>
     </div>
   </div>
-  <div class='status-line low'></div>
+  <div class='status-line high'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
@@ -50,25 +50,32 @@
 25
 26
 27
-28</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+28
+29
+30
+31
+32</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -77,40 +84,45 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from "react";
 &nbsp;
-import classes from './Burger.css';
-import BurgerIngredient from './BurgerIngredient/BurgerIngredient';
+import classes from "./Burger.css";
+import BurgerIngredient from "./BurgerIngredient/BurgerIngredient";
 &nbsp;
-const burger = ( props ) =&gt; {
-    let transformedIngredients = Object.keys( props.ingredients )
-        .map( <span class="fstat-no" title="function not covered" >ig</span>Key =&gt; {
-<span class="cstat-no" title="statement not covered" >            return [...Array( props.ingredients[igKey] )].map( <span class="fstat-no" title="function not covered" >( </span>_, i ) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >                return &lt;BurgerIngredient key={igKey + i} type={igKey} /&gt;;</span>
-            } );
-        } )
-        .reduce(<span class="fstat-no" title="function not covered" >(a</span>rr, el) =&gt; {
-<span class="cstat-no" title="statement not covered" >            return arr.concat(el)</span>
-        }, []);
-<span class="cstat-no" title="statement not covered" >    if (transformedIngredients.length === 0) {</span>
-<span class="cstat-no" title="statement not covered" >        transformedIngredients = &lt;p&gt;Please start adding ingredients!&lt;/p&gt;;</span>
-    }
-<span class="cstat-no" title="statement not covered" >    return (</span>
-        &lt;div className={classes.Burger}&gt;
-            &lt;BurgerIngredient type="bread-top" /&gt;
-            {transformedIngredients}
-            &lt;BurgerIngredient type="bread-bottom" /&gt;
-        &lt;/div&gt;
+const burger = (props) =&gt; {
+  let transformedIngredients = Object.keys(props.ingredients)
+    .map((igKey) =&gt; {
+      return [...Array(props.ingredients[igKey])].map((_, i) =&gt; {
+        return &lt;BurgerIngredient key={igKey + i} type={igKey} /&gt;;
+      });
+    })
+    .reduce((arr, el) =&gt; {
+      return arr.concat(el);
+    }, []);
+  if (transformedIngredients.length === 0) {
+    transformedIngredients = (
+      &lt;p className="testp"&gt;Please start adding ingredients!&lt;/p&gt;
     );
+  }
+&nbsp;
+  return (
+    &lt;div className={classes.Burger}&gt;
+      &lt;BurgerIngredient type="bread-top" className="aa" /&gt;
+      {transformedIngredients}
+      &lt;BurgerIngredient type="bread-bottom" /&gt;
+    &lt;/div&gt;
+  );
 };
 &nbsp;
-export default burger;</pre></td></tr>
+export default burger;
+&nbsp;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Apr 06 2020 20:05:13 GMT+0530 (IST)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Apr 07 2020 22:07:11 GMT+0530 (IST)
 </div>
 </div>
 <script src="../../../prettify.js"></script>

@@ -6,6 +6,7 @@ const order = (props) => {
   const ingredients = [];
 
   for (let ingredientName in props.ingredients) {
+    // console.log(ingredients);
     ingredients.push({
       name: ingredientName,
       amount: props.ingredients[ingredientName],
@@ -28,11 +29,11 @@ const order = (props) => {
       </span>
     );
   });
-
+  console.log(ingredientOutput);
   return (
     <div className={classes.Order}>
-      <p>Ingredients: {ingredientOutput}</p>
-      <p>
+      <p className="ingTest">Ingredients: {ingredientOutput}</p>
+      <p className="test">
         Price: <strong> {Number.parseFloat(props.price)}</strong>
       </p>
     </div>

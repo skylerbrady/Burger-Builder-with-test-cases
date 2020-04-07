@@ -3,20 +3,25 @@ import React from "react";
 import { configure, shallow } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import Burger from "./Burger";
+import BurgerIngredient from "./BurgerIngredient/BurgerIngredient";
 
 configure({ adapter: new Adapter() });
 let wrapper;
-let mockTransformedIngredients = jest.fn();
-let sometext = "Please start adding ingredients!";
 describe("<Burger />", () => {
-  beforeEach(() => {
-    wrapper = shallow(<Burger />);
+  wrapper = shallow(<Burger ingredients={""} transformedIngredients={[]} />);
+  it("should render sometext when transformedIngredients is 0", () => {
+    let output = "Please start adding ingredients!";
+    expect(wrapper.find(".testp").text()).toEqual(output);
   });
-  it("should render initially sometext", () => {
-    expect(wrapper.find(Burger)).toHaveLength(0);
+  it("should render top bread initially ", () => {
+    wrapper = shallow(<BurgerIngredient type="bread-top" />);
+    let output = 0;
+    <BurgerIngredient type="bread-top" className="aa" />;
+    expect(wrapper.find(".aa").length).toEqual(output);
   });
-  let output = 2;
-  it("should render initially two burger ingredients ", () => {
-    expect(wrapper.find("div").lenght).toEqual(output);
+  it("should render bottom bread initially ", () => {
+    wrapper = shallow(<BurgerIngredient type="bread-bottom" />);
+    let output = 0;
+    expect(wrapper.find("bread-bottom").length).toEqual(output);
   });
 });

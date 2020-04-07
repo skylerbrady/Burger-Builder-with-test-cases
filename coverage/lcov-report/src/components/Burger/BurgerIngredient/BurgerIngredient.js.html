@@ -75,23 +75,20 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -103,13 +100,16 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -119,38 +119,38 @@ import PropTypes from 'prop-types';
 import classes from './BurgerIngredient.css';
 &nbsp;
 class BurgerIngredient extends Component {
-<span class="fstat-no" title="function not covered" >    re</span>nder () {
-        let ingredient = <span class="cstat-no" title="statement not covered" >null;</span>
+    render () {
+        let ingredient = null;
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        switch ( this.props.type ) {</span>
+        switch ( this.props.type ) {
             case ( 'bread-bottom' ):
-<span class="cstat-no" title="statement not covered" >                ingredient = &lt;div className={classes.BreadBottom}&gt;&lt;/div&gt;;</span>
-<span class="cstat-no" title="statement not covered" >                break;</span>
+                ingredient = &lt;div className={classes.BreadBottom}&gt;&lt;/div&gt;;
+                break;
             case ( 'bread-top' ):
-<span class="cstat-no" title="statement not covered" >                ingredient = (</span>
+                ingredient = (
                     &lt;div className={classes.BreadTop}&gt;
                         &lt;div className={classes.Seeds1}&gt;&lt;/div&gt;
                         &lt;div className={classes.Seeds2}&gt;&lt;/div&gt;
                     &lt;/div&gt;
                 );
-<span class="cstat-no" title="statement not covered" >                break;</span>
-            case ( 'meat' ):
+                break;
+<span class="branch-2 cbranch-no" title="branch not covered" >            case ( 'meat' ):</span>
 <span class="cstat-no" title="statement not covered" >                ingredient = &lt;div className={classes.Meat}&gt;&lt;/div&gt;;</span>
 <span class="cstat-no" title="statement not covered" >                break;</span>
-            case ( 'cheese' ):
+<span class="branch-3 cbranch-no" title="branch not covered" >            case ( 'cheese' ):</span>
 <span class="cstat-no" title="statement not covered" >                ingredient = &lt;div className={classes.Cheese}&gt;&lt;/div&gt;;</span>
 <span class="cstat-no" title="statement not covered" >                break;</span>
-            case ( 'bacon' ):
+<span class="branch-4 cbranch-no" title="branch not covered" >            case ( 'bacon' ):</span>
 <span class="cstat-no" title="statement not covered" >                ingredient = &lt;div className={classes.Bacon}&gt;&lt;/div&gt;;</span>
 <span class="cstat-no" title="statement not covered" >                break;</span>
-            case ( 'salad' ):
+<span class="branch-5 cbranch-no" title="branch not covered" >            case ( 'salad' ):</span>
 <span class="cstat-no" title="statement not covered" >                ingredient = &lt;div className={classes.Salad}&gt;&lt;/div&gt;;</span>
 <span class="cstat-no" title="statement not covered" >                break;</span>
-            default:
+<span class="branch-6 cbranch-no" title="branch not covered" >            default:</span>
 <span class="cstat-no" title="statement not covered" >                ingredient = null;</span>
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        return ingredient;</span>
+        return ingredient;
     }
 }
 &nbsp;
@@ -164,7 +164,7 @@ export default BurgerIngredient;</pre></td></tr>
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Apr 06 2020 20:05:13 GMT+0530 (IST)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Apr 07 2020 22:07:11 GMT+0530 (IST)
 </div>
 </div>
 <script src="../../../../prettify.js"></script>

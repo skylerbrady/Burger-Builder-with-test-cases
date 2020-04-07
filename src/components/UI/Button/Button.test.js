@@ -8,6 +8,6 @@ describe("<Button/>", () => {
   wraper = shallow(<Button />);
   let output = 1;
   it("should render a button", () => {
-    expect(wraper.find("button").lenght).toEqual(output);
+    expect(wraper.find("button").length).toEqual(output);
   });
 });
