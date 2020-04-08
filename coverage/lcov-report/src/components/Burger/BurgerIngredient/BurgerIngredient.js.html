@@ -21,7 +21,7 @@
     <div class='clearfix'>
     </div>
   </div>
-  <div class='status-line low'></div>
+  <div class='status-line high'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
@@ -75,41 +75,41 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -134,18 +134,18 @@ class BurgerIngredient extends Component {
                     &lt;/div&gt;
                 );
                 break;
-<span class="branch-2 cbranch-no" title="branch not covered" >            case ( 'meat' ):</span>
-<span class="cstat-no" title="statement not covered" >                ingredient = &lt;div className={classes.Meat}&gt;&lt;/div&gt;;</span>
-<span class="cstat-no" title="statement not covered" >                break;</span>
-<span class="branch-3 cbranch-no" title="branch not covered" >            case ( 'cheese' ):</span>
-<span class="cstat-no" title="statement not covered" >                ingredient = &lt;div className={classes.Cheese}&gt;&lt;/div&gt;;</span>
-<span class="cstat-no" title="statement not covered" >                break;</span>
-<span class="branch-4 cbranch-no" title="branch not covered" >            case ( 'bacon' ):</span>
-<span class="cstat-no" title="statement not covered" >                ingredient = &lt;div className={classes.Bacon}&gt;&lt;/div&gt;;</span>
-<span class="cstat-no" title="statement not covered" >                break;</span>
-<span class="branch-5 cbranch-no" title="branch not covered" >            case ( 'salad' ):</span>
-<span class="cstat-no" title="statement not covered" >                ingredient = &lt;div className={classes.Salad}&gt;&lt;/div&gt;;</span>
-<span class="cstat-no" title="statement not covered" >                break;</span>
+            case ( 'meat' ):
+                ingredient = &lt;div className={classes.Meat}&gt;&lt;/div&gt;;
+                break;
+            case ( 'cheese' ):
+                ingredient = &lt;div className={classes.Cheese}&gt;&lt;/div&gt;;
+                break;
+            case ( 'bacon' ):
+                ingredient = &lt;div className={classes.Bacon}&gt;&lt;/div&gt;;
+                break;
+            case ( 'salad' ):
+                ingredient = &lt;div className={classes.Salad}&gt;&lt;/div&gt;;
+                break;
 <span class="branch-6 cbranch-no" title="branch not covered" >            default:</span>
 <span class="cstat-no" title="statement not covered" >                ingredient = null;</span>
         }
@@ -164,7 +164,7 @@ export default BurgerIngredient;</pre></td></tr>
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Apr 07 2020 22:07:11 GMT+0530 (IST)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Apr 08 2020 22:07:22 GMT+0530 (IST)
 </div>
 </div>
 <script src="../../../../prettify.js"></script>
