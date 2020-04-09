@@ -7,6 +7,7 @@ import BuildControl from "./BuildControl/BuildControl";
 
 configure({ adapter: new Adapter() });
 let wrapper;
+let type = "salad";
 describe("<BuildControls />", () => {
   beforeEach(
     () =>
@@ -36,5 +37,25 @@ describe("<BuildControls />", () => {
     wrapper.setProps({ isAuth: false });
     let output = "SIGN UP TO ORDER";
     expect(wrapper.find("button").text()).toEqual(output);
+    it("should render ingredient type in added", () => {
+      wrapper = shallow(
+        <BuildControl
+          added={() => {
+            ingredientAdded(type);
+          }}
+        />
+      );
+      expect(wrapper.find(".More")).toHaveLength(1);
+    });
+    it("should render ingredient type in added", () => {
+      wrapper = shallow(
+        <BuildControl
+          removed={() => {
+            ingredientRemoved(type);
+          }}
+        />
+      );
+      expect(wrapper.find(".More")).toHaveLength(1);
+    });
   });
 });
