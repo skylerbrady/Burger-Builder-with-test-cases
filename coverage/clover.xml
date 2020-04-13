@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1586449128651" clover="3.2.0">
-  <project timestamp="1586449128652" name="All files">
-    <metrics statements="481" coveredstatements="176" conditionals="183" coveredconditionals="48" methods="187" coveredmethods="39" elements="851" coveredelements="263" complexity="0" loc="481" ncloc="481" packages="32" files="41" classes="41">
+<coverage generated="1586796459672" clover="3.2.0">
+  <project timestamp="1586796459673" name="All files">
+    <metrics statements="481" coveredstatements="179" conditionals="183" coveredconditionals="48" methods="187" coveredmethods="42" elements="851" coveredelements="269" complexity="0" loc="481" ncloc="481" packages="32" files="41" classes="41">
       <package name="src">
         <metrics statements="58" coveredstatements="1" conditionals="43" coveredconditionals="0" methods="28" coveredmethods="0"/>
         <file name="App.js" path="/home/akash/Documents/projects/React JS/testing--01-finished/src/App.js">
@@ -95,8 +95,8 @@
           <metrics statements="6" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="2"/>
           <line num="6" count="2" type="stmt"/>
           <line num="13" count="2" type="stmt"/>
-          <line num="14" count="6" type="stmt"/>
-          <line num="19" count="24" type="stmt"/>
+          <line num="14" count="8" type="stmt"/>
+          <line num="19" count="32" type="stmt"/>
           <line num="22" count="0" type="stmt"/>
           <line num="23" count="0" type="stmt"/>
         </file>
@@ -106,7 +106,7 @@
         <file name="BuildControl.js" path="/home/akash/Documents/projects/React JS/testing--01-finished/src/components/Burger/BuildControls/BuildControl/BuildControl.js">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
           <line num="5" count="3" type="stmt"/>
-          <line num="6" count="2" type="stmt"/>
+          <line num="6" count="4" type="stmt"/>
         </file>
       </package>
       <package name="src.components.Burger.BurgerIngredient">
@@ -142,11 +142,11 @@
         </file>
       </package>
       <package name="src.components.Logo">
-        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <file name="Logo.js" path="/home/akash/Documents/projects/React JS/testing--01-finished/src/components/Logo/Logo.js">
-          <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-          <line num="6" count="2" type="stmt"/>
-          <line num="7" count="0" type="stmt"/>
+          <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="6" count="3" type="stmt"/>
+          <line num="7" count="4" type="stmt"/>
         </file>
       </package>
       <package name="src.components.Navigation.NavigationItems">
@@ -154,15 +154,15 @@
         <file name="NavigationItems.js" path="/home/akash/Documents/projects/React JS/testing--01-finished/src/components/Navigation/NavigationItems/NavigationItems.js">
           <metrics statements="2" coveredstatements="2" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
           <line num="6" count="3" type="stmt"/>
-          <line num="7" count="5" type="stmt"/>
+          <line num="7" count="6" type="stmt"/>
         </file>
       </package>
       <package name="src.components.Navigation.NavigationItems.NavigationItem">
-        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <file name="NavigationItem.js" path="/home/akash/Documents/projects/React JS/testing--01-finished/src/components/Navigation/NavigationItems/NavigationItem/NavigationItem.js">
-          <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-          <line num="6" count="3" type="stmt"/>
-          <line num="7" count="0" type="stmt"/>
+          <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="6" count="4" type="stmt"/>
+          <line num="7" count="1" type="stmt"/>
         </file>
       </package>
       <package name="src.components.Navigation.SideDrawer">
@@ -170,18 +170,18 @@
         <file name="SideDrawer.js" path="/home/akash/Documents/projects/React JS/testing--01-finished/src/components/Navigation/SideDrawer/SideDrawer.js">
           <metrics statements="5" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
           <line num="9" count="1" type="stmt"/>
-          <line num="10" count="1" type="stmt"/>
-          <line num="11" count="1" type="cond" truecount="1" falsecount="1"/>
+          <line num="10" count="6" type="stmt"/>
+          <line num="11" count="6" type="cond" truecount="1" falsecount="1"/>
           <line num="12" count="0" type="stmt"/>
-          <line num="14" count="1" type="stmt"/>
+          <line num="14" count="6" type="stmt"/>
         </file>
       </package>
       <package name="src.components.Navigation.SideDrawer.DrawerToggle">
-        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <file name="DrawerToggle.js" path="/home/akash/Documents/projects/React JS/testing--01-finished/src/components/Navigation/SideDrawer/DrawerToggle/DrawerToggle.js">
-          <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-          <line num="5" count="1" type="stmt"/>
-          <line num="6" count="0" type="stmt"/>
+          <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="5" count="2" type="stmt"/>
+          <line num="6" count="2" type="stmt"/>
         </file>
       </package>
       <package name="src.components.Navigation.Toolbar">
@@ -219,7 +219,7 @@
         <file name="Backdrop.js" path="/home/akash/Documents/projects/React JS/testing--01-finished/src/components/UI/Backdrop/Backdrop.js">
           <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
           <line num="5" count="6" type="stmt"/>
-          <line num="6" count="4" type="cond" truecount="2" falsecount="0"/>
+          <line num="6" count="5" type="cond" truecount="2" falsecount="0"/>
         </file>
       </package>
       <package name="src.components.UI.Button">
