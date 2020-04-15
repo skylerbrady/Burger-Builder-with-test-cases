@@ -7,15 +7,48 @@ import ToolBar from "../../components/Navigation/Toolbar/Toolbar";
 import SideDrawer from "../../components/Navigation/SideDrawer/SideDrawer";
 
 configure({ adapter: new Adapter() });
+let wrapper;
+let layoutInstance;
+let sideDrawerClosedHandler = jest.fn();
+let sideDrawerToggleHandler = jest.fn();
+beforeEach(() => {
+  wrapper = shallow(
+    <Layout
+      sideDrawerClosedHandler={sideDrawerClosedHandler}
+      sideDrawerToggleHandler={sideDrawerToggleHandler}
+    />
+  );
+  layoutInstance = wrapper.instance();
+});
 
 describe("<Layout />", () => {
-  let wrapper = shallow(<Layout />);
-  it("state should have false bu default", () => {
-    expect(wrapper.state.showSideDrawer).toEqual(false);
-    wrapper.sideDrawerToggleHandler();
-    let output = true;
-    expect(wrapper.state.showSideDrawer).toEqual(output);
+  it("test for sideDrawerClosedHandler", () => {
+    let output = 1;
+    const spy = jest.spyOn(layoutInstance, "sideDrawerClosedHandler");
+    layoutInstance.forceUpdate();
+    layoutInstance.sideDrawerClosedHandler();
+    expect(spy).toHaveBeenCalledTimes(output);
   });
+  it("test for sideDrawerToggleHandler", () => {
+    let output = 1;
+    const spy = jest.spyOn(layoutInstance, "sideDrawerToggleHandler");
+    layoutInstance.forceUpdate();
+    layoutInstance.sideDrawerToggleHandler();
+    expect(spy).toHaveBeenCalledTimes(output);
+  });
+  it("checks if setState is called when sideDrawerClosedHandler is invoked", () => {
+    let output = 1;
+    const spy = jest.spyOn(layoutInstance, "setState");
+    layoutInstance.sideDrawerClosedHandler();
+    expect(spy).toHaveBeenCalledTimes(output);
+  });
+  it("checks if setState is called when sideDrawerToggleHandler is invoked", () => {
+    let output = 1;
+    const spy = jest.spyOn(layoutInstance, "setState");
+    layoutInstance.sideDrawerToggleHandler();
+    expect(spy).toHaveBeenCalledTimes(output);
+  });
+
   it("toolbar should be render if its authenticated", () => {
     wrapper = shallow(
       <ToolBar isAuthenticated={false} sideDrawerToggleHandler={false} />

@@ -98,9 +98,7 @@ export class ContactData extends Component {
     formIsValid: false,
   };
 
-  orderHandler = (event) => {
-    event.preventDefault();
-
+  orderHandler = () => {
     const formData = {};
     for (let formElementIdentifier in this.state.orderForm) {
       formData[formElementIdentifier] = this.state.orderForm[
