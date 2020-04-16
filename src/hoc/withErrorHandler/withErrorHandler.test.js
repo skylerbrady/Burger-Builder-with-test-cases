@@ -16,6 +16,21 @@ beforeEach(() => {
   withErrorHandlerInstance = wrapper.instance();
 });
 describe("<WithErrorHandler />", () => {
+  it("test for componentWillMount", () => {
+    let output = 1;
+    const spy = jest.spyOn(withErrorHandlerInstance, "componentWillMount");
+    withErrorHandlerInstance.forceUpdate();
+    withErrorHandlerInstance.componentWillMount();
+    expect(spy).toHaveBeenCalledTimes(output);
+  });
+  it("test for componentWillUnmount", () => {
+    let output = 1;
+    const spy = jest.spyOn(withErrorHandlerInstance, "componentWillUnmount");
+    withErrorHandlerInstance.forceUpdate();
+    withErrorHandlerInstance.componentWillUnmount();
+    expect(spy).toHaveBeenCalledTimes(output);
+  });
+
   it("test for errorConfirmedHandler", () => {
     let output = 1;
     const spy = jest.spyOn(withErrorHandlerInstance, "errorConfirmedHandler");

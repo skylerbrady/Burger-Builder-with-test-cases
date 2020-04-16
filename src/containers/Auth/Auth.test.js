@@ -7,16 +7,52 @@ import { Auth } from "./Auth";
 import Spinner from "../../components/UI/Spinner/Spinner";
 
 configure({ adapter: new Adapter() });
+let wrapper;
+let authInstance;
+let inputChangedHandler = jest.fn();
+let submitHandler = jest.fn();
+let switchAuthModeHandler = jest.fn();
+beforeEach(() => {
+  wrapper = shallow(
+    <Auth
+      onAuth={() => {}}
+      onSetAuthRedirectPath={() => {}}
+      inputChangedHandler={inputChangedHandler}
+      submitHandler={submitHandler}
+      switchAuthModeHandler={switchAuthModeHandler}
+    />
+  );
+  authInstance = wrapper.instance();
+});
 
 describe("<Auth />", () => {
-  let wrapper;
-  beforeEach(
-    () =>
-      (wrapper = shallow(
-        <Auth onAuth={() => {}} onSetAuthRedirectPath={() => {}} />
-      ))
-  );
-
+  it("should test the inputChangedHandler", () => {
+    let output = 1;
+    const spy = jest.spyOn(authInstance, "inputChangedHandler");
+    authInstance.forceUpdate();
+    authInstance.inputChangedHandler();
+    expect(spy).toHaveBeenCalledTimes(output);
+  });
+  it("should test the submitHandler", () => {
+    let output = 1;
+    const spy = jest.spyOn(authInstance, "submitHandler");
+    authInstance.forceUpdate();
+    authInstance.submitHandler();
+    expect(spy).toHaveBeenCalledTimes(output);
+  });
+  it("should test the switchAuthModeHandler", () => {
+    let output = 1;
+    const spy = jest.spyOn(authInstance, "switchAuthModeHandler");
+    authInstance.forceUpdate();
+    authInstance.switchAuthModeHandler();
+    expect(spy).toHaveBeenCalledTimes(output);
+  });
+  it("checks if setState is called when switchAuthModeHandler is invoked", () => {
+    let output = 1;
+    const spy = jest.spyOn(authInstance, "setState");
+    authInstance.switchAuthModeHandler();
+    expect(spy).toHaveBeenCalledTimes(output);
+  });
   it("should display a spinner if loading", () => {
     wrapper.setProps({ loading: true });
     expect(wrapper.find(Spinner)).toHaveLength(1);
